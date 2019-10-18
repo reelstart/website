@@ -1,0 +1,31 @@
+.second-donation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.second-donation-para {
+    width: 70%;
+    font-family: 'OpenSansBold';
+    color: $button-red;
+    font-size: 3rem;
+    // padding: 0 6%;
+    // margin-bottom: 4%;
+
+}
+
+.second-donation__para {
+    font-size: 2.2rem;
+    color: $button-red;
+}
+
+.donation--color {
+    color: $button-blue;
+}
+
+.donation-button {
+    width: 15%;
+}

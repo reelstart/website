@@ -1,0 +1,77 @@
+.secondary-logo-section {
+    background: #1e1d46;
+    color: $button-blue;
+    padding: 3% 10%;
+}
+
+.secondary-logo-grid {
+    display: flex;
+    align-items: center;
+}
+
+//logo sizing
+
+.logo-container.seal {
+    width: 15%;
+}
+
+.logo-container.tdsb {
+    width: 18%;
+}
+
+.logo-container.techni {
+    width: 25%;
+}
+
+.logo-container.sonyPics {
+    width: 13%;
+}
+
+.logo-container.sonyBelieve {
+    width: 30%;
+}
+
+.logo-container.dhx {
+    width: 21%;
+}
+
+.logo-container.actra {
+    width: 22%;
+}
+
+@media all and (max-width: $mobile) {
+    .secondary-logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondary-logo-grid {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .logo-container.seal {
+        width: 25%;
+    }
+
+    .logo-container.tdsb {
+        width: 25%;
+    }
+
+    .logo-container.sonyPics {
+        width: 15%;
+    }
+
+    .logo-container.sonyBelieve {
+        width: 25%;
+    }
+
+    .logo-container.dhx {
+        width: 15%;
+    }
+
+    .logo-container.actra {
+        width: 18%;
+    }
+}

@@ -1,0 +1,96 @@
+.logo-container {
+	width: 20%;
+	padding: 2%;
+}
+
+.logo-container.apollo {
+	width: 25%;
+}
+
+.logo-container.formosa {
+	width: 15%;
+}
+
+.logo-container.juliet {
+	width: 15%;
+}
+
+.logo-container.keslow {
+	width: 18%;
+}
+
+.logo-container.nice {
+	width: 25%;
+}
+
+.logo-container.quixote {
+	width: 10%;
+}
+
+.logo-container.sim {
+	padding: 3%;
+}
+
+.logo-container.uta {
+	width: 23%;
+	padding: 3%;
+}
+
+.logo-container.william {
+	width: 25%;
+}
+
+.logo-container.deluxe {
+	padding: 6%;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+@media all and (max-width: $mobile) {
+	.logo-container.apollo {
+		width: 37%;
+	}
+
+	.logo-container.formosa {
+		width: 23%;
+	}
+
+	.logo-container.juliet {
+		width: 24%;
+	}
+
+	.logo-container.keslow {
+		width: 30%;
+	}
+
+	.logo-container.nice {
+		width: 38%;
+		padding: 3%;
+	}
+
+	.logo-container.quixote {
+		width: 13%;
+	}
+
+	.logo-container.sim {
+		padding: 3%;
+		width: 23;
+	}
+
+	.logo-container.uta {
+		width: 24%;
+		padding: 2%;
+	}
+
+	.logo-container.william {
+		width: 30%;
+	}
+
+	.logo-container.deluxe {
+		padding: 5%;
+	}
+}

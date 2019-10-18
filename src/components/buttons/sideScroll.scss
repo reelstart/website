@@ -1,0 +1,62 @@
+.side-scroll__btn {
+    background: red;
+    color: blue;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    z-index: 0;
+}
+
+.side-scroll__btn:active,
+.side-scroll__btn:focus {
+    outline: none;
+}
+
+.left {
+    left: 10%;
+    bottom: 10%;
+}
+
+.right {
+    left: 50%;
+    bottom: 10%;
+}
+
+.side-scroll__btn.left {
+    background: url('../../assets//images/Desktop/RS_ArrowDown_.png'), $button-red;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    top: 50%;
+    left: 5%;
+    // transform: rotate(90deg) translateX(-50%);
+}
+
+.side-scroll__btn.right {
+    background: url('../../assets//images/Desktop/RS_ArrowDown_.png'), $button-red;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+
+}
+
+.side-scroll__btn.left.about {
+    position: absolute;
+}
+
+.side-scroll__btn.right.about {
+    position: absolute;
+    top: 50%;
+    left: calc(95% - 40px);
+    transform: rotate(-90deg) translateX(50%);
+}
+
+.side-scroll__btn.right.founder--scroll {
+    left: calc(98% - 40px);
+    top: 50%;
+    transform: rotate(-90deg) translateX(50%);
+}
+
+.side-scroll__btn.left.founder--scroll {
+    left: 2%;
+}

@@ -1,0 +1,135 @@
+div.student-project-card {
+	width: 250px;
+	overflow: hidden;
+	color: blue;
+	border-radius: 10px;
+	margin: 1% 0;
+	position: relative;
+	font-family: 'OpenSans';
+	line-height: 1rem;
+	z-index: 100;
+}
+
+div.project-card-image {
+	position: relative;
+}
+
+img.project__poster {
+	position: relative;
+	z-index: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+div.project-card-info {
+	background: $button-blue;
+	color: white;
+	padding: 18px;
+	height: 140px;
+	position: relative;
+	width: 100%;
+}
+
+p.project-card__description {
+	box-sizing: content-box;
+}
+
+div.project-card__view-more {
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+}
+
+a.view-more__click {
+	text-decoration: underline;
+	color: white;
+}
+
+a.project-card-cast {
+	// position: absolute;
+	background: $button-blue;
+	width: 100%;
+}
+
+button.playButton {
+	font-size: 3rem;
+	display: block;
+	position: absolute;
+	transform: translateY(50%);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	bottom: 0;
+	right: 10px;
+	z-index: 100;
+	border: none;
+	background: white;
+	color: black;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+		outline: none;
+	}
+}
+
+.play__button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	padding: 0;
+}
+
+button.btn {
+	line-height: 0;
+}
+
+@media all and (max-width: $mobile) {
+	div.student-project-card {
+		width: 40%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		border-radius: 5%;
+		margin: 0 0 25px;
+	}
+
+	div.project-card-image {
+		width: 100%;
+	}
+
+	div.project-card-info {
+		position: relative;
+		z-index: -100;
+	}
+}
+
+@media all and (max-width: 720px) {
+	div.student-project-card {
+		width: 100%;
+	}
+
+	div.project-card-info {
+		width: 100%;
+	}
+
+	h4.project-card__title {
+		font-size: 2.5rem;
+	}
+
+	.project-card__location {
+		font-size: 1.3rem;
+	}
+
+	.project-card__description {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+}

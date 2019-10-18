@@ -1,0 +1,48 @@
+.founder {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.founders__name {
+    font-size: 2.5rem;
+    font-family: 'Hanoded';
+    font-weight: 100;
+    margin-bottom: 1%;
+}
+
+.founders__position {
+    margin-bottom: 6%;
+    font-family: 'OpenSansSemiBold';
+    font-size: 1rem;
+}
+
+.founders-about {
+    margin-bottom: 4%;
+    font-family: 'OpenSans';
+    font-size: 1.2rem;
+}
+
+//animations 
+.test-enter {
+    opacity: 0;
+}
+
+.test-enter.test-enter-active {
+    opacity: 1;
+    transition: all 0ms;
+}
+
+.test-exit {
+    opacity: 1;
+}
+
+.test-exit.test-exit-active {
+    opacity: 0;
+    transition: all 0ms;
+}
+
+@media all and (max-width: $mobile) {
+    .founders-about {
+        font-size: 1.1rem;
+    }
+}

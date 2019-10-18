@@ -1,0 +1,50 @@
+import React, { Component } from 'react';
+
+import '../styles/main.scss';
+
+class App extends Component {
+	test = React.createRef();
+	testTwo = React.createRef();
+	style = {
+		color: 'red',
+	};
+
+	onHover = () => {
+		console.log(this.test.current);
+		console.log(this.testTwo.current.id);
+	};
+
+	onButtonClick = () => {
+		console.log(this.test.current.getBoundingClientRect());
+		const scroll = setInterval(() => {
+			const leftOver = this.test.current.getBoundingClientRect().top % 10;
+			window.scrollBy({ top: 10 });
+
+			if (this.test.current.getBoundingClientRect().top < 10) {
+				clearInterval(scroll);
+				window.scrollBy({
+					top: leftOver,
+				});
+			}
+		}, 10);
+	};
+
+	render() {
+		return (
+			<div>
+				<div className="h1Test">
+					<h1 id="testh1" ref={this.testTwo}>
+						first window
+					</h1>
+					<button onClick={this.onButtonClick}>move</button>
+				</div>
+				<h2 className="h2test" onClick={this.onHover} style={this.style} ref={this.test}>
+					second window
+				</h2>
+				<h2 className="test3">third window</h2>
+			</div>
+		);
+	}
+}
+
+export default App;

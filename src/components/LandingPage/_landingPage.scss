@@ -1,0 +1,105 @@
+.landingPage-section {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+.landingPage-splash {
+	position: relative;
+	height: 85%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background-image: url('../../assets/images/Desktop/RS_Desktop_Main.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.landingPage-splash-background {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+}
+
+.splash__background {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.landingPage-splash-text {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.splash-text__image {
+	width: 28%;
+	height: 100%;
+}
+
+.splash-image-sizes {
+	display: block;
+	width: 100%;
+	object-fit: fill;
+	padding: 3%;
+}
+
+.splast-text__text-content {
+	width: 68%;
+}
+
+.splash__text {
+	color: white;
+	font-size: 2.5rem;
+	font-family: 'OpenSansSemiBold';
+}
+
+.splash__text--italic {
+	display: inline-block;
+	font-family: 'Hanoded';
+	font-size: 3.5rem;
+	color: $button-red;
+	transform: rotate(-5deg);
+	padding-right: 10px;
+}
+
+@media all and (max-width: $mobile) {
+	.landingPage-section {
+		position: relative;
+		// top: 5vh;
+		height: 100vh;
+		z-index: -200;
+	}
+
+	.landingPage-section::before {
+		display: block;
+		height: 5vh;
+		// margin-top: -5vh;
+		content: '';
+		visibility: hidden;
+	}
+
+	.landingPage-splash {
+		height: 95vh;
+		width: 100%;
+	}
+
+	.landingPage-splash-text {
+		flex-direction: column;
+	}
+
+	.splash-text__image {
+		width: 60%;
+		margin-bottom: 10%;
+	}
+
+	.splast-text__text-content {
+		text-align: center;
+	}
+}

@@ -1,0 +1,45 @@
+.modal-title.h4 {
+    display: block;
+    margin: 0 auto;
+}
+
+.embed-responsive-16by9-images::before {
+	padding-top: 0;
+}
+
+.image-modal > div.modal-content {
+	height: inherit;
+}
+
+.carousel-inner>.carousel-item>img {
+    display: block;
+    height: 90vh;
+    max-width: 100%;
+    // line-height: 1;
+    margin:auto;
+    width: 100%; // Add this
+    }
+
+    .grid-image-carousel {
+        object-fit: cover;
+    }
+
+@media all and (max-width: $mobile) {
+
+	.embed-responsive-images {
+		padding-top: 0;
+	}
+
+	.embed-responsive-16by9-images::before {
+		padding-top: 0;
+    }
+    
+    .carousel-inner>.carousel-item>img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        // line-height: 1;
+        margin:auto;
+        width: 100%; // Add this
+        }
+}

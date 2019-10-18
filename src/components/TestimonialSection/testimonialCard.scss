@@ -1,0 +1,56 @@
+.testimonial-card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card-image-holder {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2rem;
+}
+
+.testimonial__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial__para {
+    font-family: 'OpenSansLight';
+    margin-bottom: 1rem;
+}
+
+.testimonial-author__name {
+    font-family: 'OpenSansBold';
+}
+
+.testimonial-author__title {
+    font-family: 'OpenSansLight';
+}
+
+@media all and (max-width: $mobile) {
+    .testimonial-card {
+        width: 100vw;
+        // height: 95vh;
+        padding: 2%;
+    }
+
+    .testimonial-card-image-holder {
+        width: 55%;
+        padding: 5%;
+        margin: 0 auto;
+    }
+
+    .testimonial__para {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-author {
+        padding: 0 60px;
+    }
+
+    .testimonial-author__name {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,68 @@
+.main-sponsors-section {
+    background: $button-blue;
+    padding: 4% 15%;
+}
+
+.sponsors--color {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+}
+
+.main-sponsors__title {
+    font-family: 'OpenSansBold';
+    color: $button-red;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 6%;
+    margin-bottom: 4%;
+}
+
+.we-sponsor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.we-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: $mobile) {
+    .main-sponsors-section {
+        padding: 10% 1% 2% 1%;
+    }
+
+    .main-sponsors-section::before {
+        display: block;
+        height: 5vh;
+        // margin-top: -5vh;
+        content: '';
+        visibility: hidden;
+    }
+
+    .main-sponsors__title {
+        font-size: 2.3rem;
+        padding: 0 13%;
+    }
+
+    .mobile--italic {
+        font-size: 3rem;
+    }
+
+    .sponsors-grid {
+        padding: 0 2%;
+        // height: 40vh;
+    }
+}

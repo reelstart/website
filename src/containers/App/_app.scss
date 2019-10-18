@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#root {
+    width: 100%;
+}
+
+.main-div-container {
+    position: relative;
+    z-index: 0;
+}
+
+.longScroll {
+    position: relative;
+    z-index: -100;
+}
+
+.reelStart-page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile-size {
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 0;
+}

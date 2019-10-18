@@ -1,0 +1,24 @@
+.ImageGridSection {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-image {
+    display: block;
+    width: 25%;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media all and (max-width: $mobile) {
+    .ImageGridSection {
+        height: 100%;
+    }
+
+    .grid-image {
+        width: 50%;
+    }
+}

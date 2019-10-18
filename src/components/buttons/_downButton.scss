@@ -1,0 +1,46 @@
+.down__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 20px);
+    /* padding: 10px; */
+    border: none;
+    z-index: 100;
+    transform: translateY(50%);
+    color: white;
+    font-size: 2.5rem;
+}
+
+.down__button:link,
+.down__button:active,
+.down__button:focus {
+    outline: none;
+}
+
+.down-button__arrow {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}
+
+.down__button--red {
+    background: $button-red;
+}
+
+.down__button--blue {
+    background: $button-blue;
+}
+
+//mobile
+
+@media all and (max-width: $mobile) {
+    .down__button {
+        display: none;
+    }
+}

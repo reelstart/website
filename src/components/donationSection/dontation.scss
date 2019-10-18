@@ -1,0 +1,25 @@
+.donation-section {
+    width: 100%;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.support__heading {
+    font-family: 'Hanoded';
+    font-size: 3rem;
+    transform: rotate(-3deg);
+    color: $button-red;
+}
+
+.support__heading--new-line {
+    display: block;
+}
+
+.donation-center-image {
+    position: relative;
+    top: -8rem;
+    left: 4rem;
+}

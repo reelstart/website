@@ -1,0 +1,25 @@
+.mobile-testimonial-section {
+    position: relative;
+    z-index: -100;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.mobile-testimonial-section::before {
+    display: block;
+    height: 5vh;
+    margin-top: -5vh;
+    content: '';
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-testimonial-container {
+    width: 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
