@@ -11,9 +11,9 @@ class About extends Component {
 		return (
 			<div ref={this.props.getRef} className="about-section" id="about">
 				<div className="about-information">
-					<h1 className="about__reelstart-heading">
+					<h2 className="about__reelstart-heading">
 						A little bit about <span className="splash__text--italic">Reel Start </span>
-					</h1>
+					</h2>
 					<p className="about__para">
 						Reel Start gives deserving students in underrepresented communities the opportunity to learn
 						that film can drive powerful social change.

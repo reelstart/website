@@ -1,12 +1,12 @@
 .landingPage-section {
-	height: 100vh;
+	height: calc(95vh - 9rem);
 	width: 100%;
 	position: relative;
 }
 
 .landingPage-splash {
 	position: relative;
-	height: 85%;
+	height: calc(95vh - 9rem);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -14,13 +14,14 @@
 	// background-image: url('../../assets/images/Desktop/RS_Desktop_Main.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	margin-top: 9rem;
 }
 
 .landingPage-splash-background {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: calc(95vh - 9rem);
 	z-index: -100;
 }
 
@@ -33,14 +34,17 @@
 
 .landingPage-splash-text {
 	display: flex;
-	width: 80%;
+	width: 70%;
+	max-width: 960px;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .splash-text__image {
-	width: 28%;
+	width: 30%;
+	min-width: 250px;
 	height: 100%;
+	margin-right: 20px;
 }
 
 .splash-image-sizes {
@@ -56,20 +60,19 @@
 
 .splash__text {
 	color: white;
-	font-size: 2.5rem;
-	font-family: 'OpenSansSemiBold';
+	font-size: 3.2rem;
 }
 
 .splash__text--italic {
 	display: inline-block;
 	font-family: 'Hanoded';
-	font-size: 3.5rem;
-	color: $button-red;
+	font-size: 4.25rem;
+	color: $red;
 	transform: rotate(-5deg);
 	padding-right: 10px;
 }
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
 	.landingPage-section {
 		position: relative;
 		// top: 5vh;
@@ -87,16 +90,22 @@
 
 	.landingPage-splash {
 		height: 95vh;
-		width: 100%;
+		margin-top: 0;
+	}
+
+	.landingPage-splash-background {
+		height: 95vh;
 	}
 
 	.landingPage-splash-text {
 		flex-direction: column;
+		width: 100%;
 	}
 
 	.splash-text__image {
-		width: 60%;
-		margin-bottom: 10%;
+		width: 36%;
+		margin-bottom: 5%;
+		margin-right: 0;
 	}
 
 	.splast-text__text-content {

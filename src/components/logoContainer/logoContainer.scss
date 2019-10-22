@@ -50,7 +50,7 @@
 	object-fit: fill;
 }
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
 	.logo-container.apollo {
 		width: 37%;
 	}

@@ -2,18 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
     left: calc(50% - 20px);
     /* padding: 10px; */
     border: none;
     z-index: 100;
     transform: translateY(50%);
     color: white;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 .down__button:link,
@@ -30,16 +31,16 @@
 }
 
 .down__button--red {
-    background: $button-red;
+    background: $red;
 }
 
 .down__button--blue {
-    background: $button-blue;
+    background: $blue;
 }
 
 //mobile
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
     .down__button {
         display: none;
     }

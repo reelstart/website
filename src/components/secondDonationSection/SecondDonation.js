@@ -12,9 +12,7 @@ const SecondDonation = () => {
 					operations with support and donations from those who believe in our goal.
 				</p>
 			</div>
-			<div className="donation-button">
-				<DonateButton styleName={'second-donation-button'} />
-			</div>
+			<DonateButton styleName={'second-donation-button'} />
 		</div>
 	);
 };

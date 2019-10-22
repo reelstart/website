@@ -27,11 +27,11 @@ class StudentProjectCard extends Component {
 				<div className="project-card-image">
 					<img src={image} alt="Movie Poster" className="project__poster" />
 					<Button onClick={this.handleShow} className="playButton">
-						<p className="play__button">&#9656;</p>
+						<i className="fa fa-caret-right"></i>
 					</Button>
 				</div>
 				<div className="project-card-info">
-					<h4 className="project-card__title">{title}</h4>
+					<h3 className="project-card__title">{title}</h3>
 					<p className="project-card__location">{location}</p>
 					<p className="project-card__description">{description}</p>
 					<div className="project-card__view-more">

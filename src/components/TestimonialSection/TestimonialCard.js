@@ -4,11 +4,13 @@ import React from 'react';
 import '../../styles/main.scss';
 
 export const TestimonialCard = props => {
-	const { image, para, name, title } = props;
+	const { image, para, name, title, colour } = props;
+	let altText = 'Picture of ' + name;
+	let className = 'testimonial__image ' + colour;
 	return (
 		<div className="testimonial-card">
 			<div className="testimonial-card-image-holder">
-				<img src={image} alt="Picture of person giving testimonial" className="testimonial__image" />
+				<img src={image} alt={altText} className={className} />
 			</div>
 			<div className="testimonial-main-content">
 				<p className="testimonial__para">{para}</p>

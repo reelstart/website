@@ -1,13 +1,17 @@
 div.student-project-card {
-	width: 250px;
+	width: 32%;
 	overflow: hidden;
 	color: blue;
-	border-radius: 10px;
-	margin: 1% 0;
+	border-radius: 3rem;
+	margin: 0 2% 2% 0;
 	position: relative;
 	font-family: 'OpenSans';
-	line-height: 1rem;
-	z-index: 100;
+	font-size: 1.4rem;
+	z-index: 1;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
 }
 
 div.project-card-image {
@@ -23,11 +27,15 @@ img.project__poster {
 	object-fit: contain;
 }
 
+.project-card__title {
+	font-size: 1.6rem;
+}
+
 div.project-card-info {
-	background: $button-blue;
+	background: $blue;
 	color: white;
-	padding: 18px;
-	height: 140px;
+	padding: 2rem;
+	min-height: 24rem;
 	position: relative;
 	width: 100%;
 }
@@ -43,30 +51,38 @@ div.project-card__view-more {
 }
 
 a.view-more__click {
-	text-decoration: underline;
-	color: white;
+		color: $light-red;
+		text-decoration: none;
+	&:hover {
+		color: white;
+		text-decoration: underline;
+	}
 }
 
 a.project-card-cast {
 	// position: absolute;
-	background: $button-blue;
+	background: $blue;
 	width: 100%;
 }
 
 button.playButton {
-	font-size: 3rem;
+	font-size: 4rem;
 	display: block;
 	position: absolute;
 	transform: translateY(50%);
-	width: 40px;
-	height: 40px;
+	width: 4.8rem;
+	height: 4.8rem;
 	border-radius: 50%;
 	bottom: 0;
 	right: 10px;
 	z-index: 100;
 	border: none;
 	background: white;
-	color: black;
+	color: $blue;
+
+	.fa {
+		margin-left: 0.4rem;
+	}
 
 	&:focus {
 		outline: none;
@@ -74,6 +90,10 @@ button.playButton {
 
 	&:active {
 		outline: none;
+	}
+
+	&:hover {
+		background: $light-red;
 	}
 }
 
@@ -91,14 +111,18 @@ button.btn {
 	line-height: 0;
 }
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
 	div.student-project-card {
-		width: 40%;
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0;
-		border-radius: 5%;
-		margin: 0 0 25px;
+		width: 48%;
+		margin: 0 4% 4% 0;
+
+		&:nth-child(3n) {
+			margin-right: 4%;
+		}
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
 	}
 
 	div.project-card-image {
@@ -111,25 +135,31 @@ button.btn {
 	}
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: $tablet) {
 	div.student-project-card {
 		width: 100%;
+		&:nth-child(n) {
+			margin-right: 0;
+		}
 	}
 
 	div.project-card-info {
 		width: 100%;
+		min-height: auto;
+		padding-bottom: 4rem;
+		padding-top: 4rem;
+		font-size: 1.6rem;
 	}
 
-	h4.project-card__title {
-		font-size: 2.5rem;
+	div.project-card__view-more {
+		// bottom: inherit;
+		position: static;
 	}
+}
 
-	.project-card__location {
-		font-size: 1.3rem;
-	}
-
-	.project-card__description {
-		font-size: 1.2rem;
-		line-height: 1.6rem;
+@media all and (max-width: $mobile) {
+	div.student-project-card {
+		border-radius: 0;
+		margin-bottom: 0;
 	}
 }

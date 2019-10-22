@@ -3,6 +3,7 @@ import endGame from '../assets/images/Desktop/Endgame copy.jpg';
 import newKidPlacement from '../assets/images/Desktop/New Kid Placement Committee copy.png';
 import dumpsterDiving from '../assets/images/Desktop/Dumpster Diving copy.png';
 import robotBullies from '../assets/images/Desktop/Robot Bullies copy.png';
+import aboutReelStart from '../assets/images/Desktop/AboutReelStart.png';
 
 export const PROJECTS = [
 	{
@@ -93,7 +94,7 @@ export const PROJECTS = [
 	},
 	{
 		id: 5,
-		image: 'http://i3.ytimg.com/vi/Y54QMKaSzJs/maxresdefault.jpg',
+		image: aboutReelStart,
 		title: 'About Reel Start',
 		location: '',
 		description: 'A behind the scenes look at the Reel Start program.',

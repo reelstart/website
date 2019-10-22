@@ -6,7 +6,7 @@ import LandingPage from '../../components/LandingPage/LandingPage';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
 import About from '../../components/AboutSection/About';
 import StudentProjects from '../../components/StudentProjectsSection/StudentProjects';
-import Founders from '../FoundersSection/Founders';
+// import Founders from '../FoundersSection/Founders';
 import ImageGrid from '../../components/ImageGrid/ImageGrid';
 import More from '../../components/more@/More';
 import MainSponsors from '../../components/mainSponsors/MainSponsors';
@@ -15,9 +15,9 @@ import SecondDonation from '../../components/secondDonationSection/SecondDonatio
 import Footer from '../../components/Footer/Footer';
 
 //testing carousels
-import FoundersMobile from '../../components/FoundersMobile/FoundersMobile';
+// import FoundersMobile from '../../components/FoundersMobile/FoundersMobile';
 import TestimonialCarousel from '../../components/TestimonialSection/TestimonialCarousel';
-import FoundersDesktop from '../../components/FoundersDesktop/FoundersDesktop';
+import Founders from '../../components/Founders/Founders';
 
 //mobile component imports
 import MobileNav from '../../components/MobileNav/MobileNav';
@@ -64,21 +64,8 @@ class App extends Component {
 	};
 
 	onClickScroll = ref => {
-		const scrollAmount = 20;
-
-		const difference = ref.current.getBoundingClientRect().top % scrollAmount;
-
-		if (ref.current.getBoundingClientRect().top >= scrollAmount) {
-			window.scrollBy({
-				top: scrollAmount,
-			});
-
-			requestAnimationFrame(() => this.onClickScroll(ref));
-		} else {
-			window.scrollBy({
-				top: difference + 0.5,
-			});
-		}
+		let positionTop = ref.current.offsetTop - 48;
+		window.scroll({left: 0, top: positionTop, behavior: 'smooth'});
 	};
 
 	render() {
@@ -91,7 +78,7 @@ class App extends Component {
 					click={() => this.onClickScroll(this.testimonialRef)}
 				/>
 				<TestimonialSection getRef={this.testimonialRef} />
-				<FoundersDesktop getRef={this.FoundersRef} />
+				<Founders getRef={this.FoundersRef} />
 				<ImageGrid />
 				<More />
 				<MainSponsors />
@@ -109,7 +96,7 @@ class App extends Component {
 				<StudentProjects />
 				{/* <MobileTestimonial /> */}
 				<TestimonialCarousel />
-				<FoundersMobile />
+				<Founders />
 				<ImageGrid />
 				<More />
 				<MainSponsors />
@@ -119,7 +106,7 @@ class App extends Component {
 
 		return (
 			<div className="main-div-container">
-				{this.state.width >= 900
+				{this.state.width >= 993
 					? large //small
 					: longScroll}
 			</div>

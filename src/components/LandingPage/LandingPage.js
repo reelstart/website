@@ -25,10 +25,10 @@ class LandingPage extends Component {
 							<img src={reelLogo} alt="Reel Start logo" className="splash-image-sizes" />
 						</div>
 						<div className="splast-text__text-content">
-							<p className="splash__text">
+							<h1 className="splash__text">
 								<span className="splash__text--italic">Reel Start </span>
 								gives students their first shot to change the world through film.
-							</p>
+							</h1>
 						</div>
 					</div>
 					<DownButton click={this.props.click} color={'down__button--red'} />

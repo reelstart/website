@@ -11,7 +11,7 @@ const StudentProjects = props => {
 	return (
 		<div className="student-projects-section" ref={props.getRef} id="student-projects">
 			<div className="student-projects-heading">
-				<h1 className="student-projets__title">Student Short Films</h1>
+				<h2 className="student-projets__title">Student Short Films</h2>
 				<p className="student-projects-heading__para">
 					Each year <span className="reel-start--blue">Reel Start</span> students create a short film about a
 					social issue that’s especially meaningful to them. They work with professional writers to turn their

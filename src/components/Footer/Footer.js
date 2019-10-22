@@ -46,7 +46,7 @@ const Footer = () => {
 				</div>
 				<div className="footer-right-contact-section">
 					<div className="footer-right-contact">
-						<h1 className="right-contact__contact-us">Contact Us</h1>
+						<h2 className="right-contact__contact-us">Contact Us</h2>
 						<a href="mailto:info@reelstart.com" className="footer-right__email">
 							info@reelstart.com
 						</a>
@@ -55,7 +55,7 @@ const Footer = () => {
 						</a> */}
 					</div>
 					<div className="footer-right-follow">
-						<p className="footer-right__title">Follow Us</p>
+						<h2 className="right-contact__contact-us">Follow Us</h2>
 						<div className="footer-social-media">
 							<div className="social-icon-container">
 								<a

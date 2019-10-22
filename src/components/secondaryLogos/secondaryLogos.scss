@@ -1,6 +1,6 @@
 .secondary-logo-section {
     background: #1e1d46;
-    color: $button-blue;
+    color: $blue;
     padding: 3% 10%;
 }
 
@@ -39,7 +39,7 @@
     width: 22%;
 }
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
     .secondary-logo-section {
         display: flex;
         justify-content: center;

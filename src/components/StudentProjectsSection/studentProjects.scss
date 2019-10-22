@@ -1,51 +1,49 @@
 .student-projects-section {
 	width: 100%;
-	padding: 5% 8%;
-	background: $button-red;
+	padding: 5% 0;
+	background: $red;
 	position: relative;
 }
 
 .student-projects-heading {
-	padding: 4% 8%;
-	color: white;
-	font-size: 2rem;
-	text-align: center;
-}
-
-.student-projets__title {
-	font-size: 3.2rem;
-	margin-bottom: 2rem;
-	font-family: 'OpenSansSemiBold';
+	width: 70%;
+    max-width: 1200px;
+	padding: 4% 0;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .student-projects-heading__para {
-	font-size: 2rem;
-	font-family: 'OpenSansSemiBold';
+	font-size: 2.4rem;
+	line-height: 1.3333;
 }
 
 .reel-start--blue {
 	display: inline-block;
 	font-family: 'Hanoded';
 	transform: rotate(-5deg);
-	color: $button-blue;
-	font-size: 3rem;
+	color: $blue;
+	font-size: 3.6rem;
 }
 
 .student-projects-videos {
-	width: 100%;
+	width: 84%;
+	max-width: 1400px;
 	padding: 2% 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	// justify-content: space-evenly;
 	align-items: flex-start;
-	margin-bottom: 40px;
+	margin: 0 auto 40px;
 }
 
-@media all and (max-width: $mobile) {
-	.student-projects-section {
-		z-index: -100;
-		padding: 2% 0 0 0;
-	}
+@media all and (max-width: $small-desktop) {
+	// .student-projects-section {
+	// 	z-index: -100;
+	// 	padding: 2% 0 0 0;
+	// }
 
 	.student-projects-section::before {
 		display: block;
@@ -56,5 +54,17 @@
 
 	.student-projects-videos {
 		padding: 0;
+	}
+}
+
+@media all and (max-width: $mobile) {
+	.student-projects-section {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	.student-projects-videos {
+		width: 100%;
+		margin: 0;
 	}
 }

@@ -8,7 +8,7 @@ export const DownButton = props => {
 	return (
 		<div className={`down__button ${props.color}`} onClick={props.click}>
 			{/* <img src={downArrow} alt="" className="down-button__arrow" /> */}
-			&#x25bc;
+			<i className="fa fa-caret-down"></i>
 		</div>
 	);
 };

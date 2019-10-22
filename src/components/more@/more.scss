@@ -1,15 +1,32 @@
 div.more-section {
-    background: $button-red;
+    background: $red;
     width: 100%;
     text-align: center;
     color: white;
-    padding: 2%;
+    padding: 4rem;
 }
 
-h1.more__title {
+.more__title {
     display: inline-block;
     margin-right: .5%;
     font-family: 'OpenSansBold';
+    font-size: 2.5rem;
+}
+
+.more-button {
+    background: $blue;
+    border-radius: 3rem;
+    padding: 1rem 5rem;
+    border: none;
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'OpenSansBold';
+
+    &:hover {
+        background: $light-blue;
+    }
 }
 
 a.more__click {
@@ -17,4 +34,5 @@ a.more__click {
     font-size: 2rem;
     font-family: 'OpenSansBold';
     color: white;
+    margin: 0 auto;
 }

@@ -52,15 +52,6 @@ class MobileTestimonial extends Component {
 							/>
 						);
 					})}
-					{/* <div className="page-scroll-icon">
-    					{FOUNDERS.map(founder => {
-    						return founder.id === this.state.card ? (
-    							<div key={founder.id} className="scroll-founder on" />
-    						) : (
-    							<div key={founder.id} className="scroll-founder" />
-    						);
-    					})}
-    				</div> */}
 				</div>
 			</div>
 		);

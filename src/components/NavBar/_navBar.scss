@@ -2,38 +2,43 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 15%;
+	height: 9rem;
 	padding: 10px 40px;
 	width: 100%;
 	background: white;
-}
-
-.navBar.floating {
 	position: fixed;
-	top: 0;
 	z-index: 200;
-}
-
-.navBar.floating.testing-enter {
-	top: -15%;
-}
-
-.navBar.floating.testing-enter.testing-enter-active {
 	top: 0;
-	transition: top 1000ms;
+
+	&.floating {
+		position: fixed;
+		top: 0;
+		z-index: 200;
+
+		&.testing-enter {
+			top: -15%;
+
+			&.testing-enter-active {
+				top: 0;
+				transition: top 1000ms;
+			}
+		}
+
+		&.testing-exit {
+			top: 0;
+			&.testing-exit-active {
+				top: -15%;
+				transition: top 1000ms;
+			}
+		}
+
+	}
+
 }
 
-.navBar.floating.testing-exit {
-	top: 0;
-}
-
-.navBar.floating.testing-exit.testing-exit-active {
-	top: -15%;
-	transition: top 1000ms;
-}
 
 //mobile styles
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
 	.navBar {
 		display: none;
 	}

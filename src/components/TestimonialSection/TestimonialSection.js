@@ -17,6 +17,7 @@ const TestimonialSection = props => {
 						para={testimonial.description}
 						name={testimonial.name}
 						title={testimonial.title}
+						colour={testimonial.colour}
 					/>
 				);
 			})}

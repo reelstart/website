@@ -3,29 +3,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 5% 0;
-    width: 85%;
+    width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .second-donation-para {
     width: 70%;
     font-family: 'OpenSansBold';
-    color: $button-red;
+    color: $red;
     font-size: 3rem;
-    // padding: 0 6%;
-    // margin-bottom: 4%;
-
-}
-
-.second-donation__para {
-    font-size: 2.2rem;
-    color: $button-red;
+    line-height: 1.2;
 }
 
 .donation--color {
-    color: $button-blue;
-}
-
-.donation-button {
-    width: 15%;
+    color: $blue;
 }

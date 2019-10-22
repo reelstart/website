@@ -24,7 +24,7 @@
         object-fit: cover;
     }
 
-@media all and (max-width: $mobile) {
+@media all and (max-width: $small-desktop) {
 
 	.embed-responsive-images {
 		padding-top: 0;
