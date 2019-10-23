@@ -6,7 +6,11 @@
 
 html {
     font-size: 62.5%;
+    @media all and (min-width: $large-desktop) {
+        font-size: 78.125%;
+    }
 }
+
 
 body {
     margin: 0;
