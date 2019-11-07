@@ -78,6 +78,10 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.ico$/,
+				loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
+			},
+			{
 				test: /\.(css|scss)$/,
 				use: [
 					MiniCssExtractPlugin.loader,
@@ -126,6 +130,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './index.html',
 			filename: 'index.html',
+			favicon: './src/assets/favicon/favicon.ico'
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[contenthash].css',

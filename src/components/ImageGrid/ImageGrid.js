@@ -8,18 +8,31 @@ import { gridImages } from '../../data/gridImages';
 //image modal
 import ImageModal from '../ImageModal/ImageModal';
 
+//user: reelstartorg
 const options = {
-  accessToken: '41365.d90570a.6896b731b4c2478dbe8cd64cbefccb4d',
+  accessToken: '8401691317.1677ed0.fdeb014dfc6b40a1af229168edf5b1fa',
   clientId: '1051502a682b424385b1d0ee17180955',
   get: 'user', // popular, user
   locationId: null,
   resolution: 'standard_resolution', // thumbnail, low_resolution, standard_resolution
   sortBy: 'most-recent', // none, least-commented, least-liked, least-recent, most-commented, most-liked, most-recent, random
   tagName: null,
-  userId: '41365',
+  userId: '8401691317',
 };
 
-console.log(options);
+//user: pattwala -- for testing
+// const options = {
+//   accessToken: '41365.d90570a.6896b731b4c2478dbe8cd64cbefccb4d',
+//   clientId: '1051502a682b424385b1d0ee17180955',
+//   get: 'user', // popular, user
+//   locationId: null,
+//   resolution: 'standard_resolution', // thumbnail, low_resolution, standard_resolution
+//   sortBy: 'most-recent', // none, least-commented, least-liked, least-recent, most-commented, most-liked, most-recent, random
+//   tagName: null,
+//   userId: '41365',
+// };
+
+//console.log(options);
 
 const instagramUrl = buildUrl(options);
 
@@ -46,7 +59,7 @@ class ImageGrid extends Component {
 			.then((result) => {
 				this.setState({
 					isLoaded: true,
-					instaData: result.data.slice(10,18)
+					instaData: result.data.slice(0,8)
 				});
 			},
 			(error) => {
@@ -75,13 +88,12 @@ class ImageGrid extends Component {
 					 />*/}
 					{instaData.map(image => {
 						return (
-							<div className="grid-item">
+							<div className="grid-item" key={image.id}>
 								<img
 									src={image.images.standard_resolution.url}
 									// alt={image.caption.text}
 									className="grid-image"
 									//onClick={() => this.handleShow(image.id)}
-									key={image.id}
 								/>
 							</div>
 						);

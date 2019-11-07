@@ -1,6 +1,6 @@
 .main-sponsors-section {
     background: $blue;
-    padding: 5% 15%;
+    padding: 5% 15% 0;
 }
 
 .sponsors--color {
@@ -15,7 +15,7 @@
     font-size: 3rem;
     text-align: center;
     padding: 9% 6% 0;
-    margin-bottom: 4%;
+    margin-bottom: 6rem;
 }
 
 .we-sponsor {
@@ -28,8 +28,8 @@
 
 .we-logo {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
 }
 
 .sponsors-grid {
@@ -40,11 +40,15 @@
 }
 
 @media all and (max-width: $small-desktop) {
+    .we-logo {
+        width: 60px;
+        height: 60px;
+    }
     .main-sponsors-section {
         padding: 4% 0 5%;
     }
 
-    .main-sponsors__title {
-        padding: 0 5%;
-    }
+    // .main-sponsors__title {
+    //     padding: 0 5%;
+    // }
 }

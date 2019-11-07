@@ -4,7 +4,7 @@ const More = () => {
 	return (
 		<div className="more-section">
 			<a className="more__click" href="https://www.instagram.com/reelstartorg/?hl=en" target="_blank">
-			<button className="more-button">Follow @reelstart on Instagram</button>
+			<button className="more-button">Follow @reelstartorg for more</button>
 			</a>
 		</div>
 	);

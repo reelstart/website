@@ -1,7 +1,7 @@
 import React from 'react';
 
 //component imports
-import { Nav } from './Nav';
+import Nav from './Nav';
 import DonateButton from '../buttons/DonateButton';
 
 //styles

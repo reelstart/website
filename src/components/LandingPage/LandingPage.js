@@ -21,13 +21,14 @@ class LandingPage extends Component {
 						<img src={background} alt="image of student and educators" className="splash__background" />
 					</div>
 					<div className="landingPage-splash-text">
+						{/* 
 						<div className="splash-text__image">
 							<img src={reelLogo} alt="Reel Start logo" className="splash-image-sizes" />
-						</div>
+						</div> 
+						*/}
 						<div className="splast-text__text-content">
 							<h1 className="splash__text">
-								<span className="splash__text--italic">Reel Start </span>
-								gives students their first shot to change the world through film.
+								<i className="reelstart red"><span>Reel Start</span></i> gives students their first shot to change the world through film.
 							</h1>
 						</div>
 					</div>

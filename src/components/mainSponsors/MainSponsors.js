@@ -11,8 +11,7 @@ const MainSponsors = () => {
 	return (
 		<div className="main-sponsors-section" id="sponsors">
 			<h2 className="main-sponsors__title">
-				<span className="splash__text--italic sponsors--color mobile--italic">Reel Start </span>
-				is made possible by the support of our wonderful volunteers, partners, and sponsors.
+				<i className="reelstart white"><span>Reel Start</span></i> is made possible by the support of our wonderful volunteers, partners, and sponsors.
 			</h2>
 			<div className="we-sponsor">
 				<img className='we-logo' src={WeLogo} alt="We logo"/>

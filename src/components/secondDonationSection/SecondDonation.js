@@ -8,8 +8,7 @@ const SecondDonation = () => {
 		<div className="second-donation-section">
 			<div className="second-donation-para">
 				<p className="second-donation__para">
-					<span className="splash__text--italic donation--color">Reel Start</span>funds its program and
-					operations with support and donations from those who believe in our goal.
+					<i className="reelstart blue"><span>Reel Start</span></i> funds its program and operations with support and donations from those who believe in our goal.
 				</p>
 			</div>
 			<DonateButton styleName={'second-donation-button'} />
