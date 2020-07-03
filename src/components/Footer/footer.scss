@@ -15,6 +15,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-left-nav-section {
@@ -30,6 +31,11 @@
 
 .footer-left__nav-items {
     list-style: none;
+}
+
+.footer-bottom-legal {
+    margin-top: 5rem;
+    color: white;
 }
 
 .nav__link {
@@ -105,4 +111,42 @@
     display: block;
     width: 100%;
     height: 100%;
+}
+
+@media all and (max-width: $small-desktop) {
+    .footer-section {
+        padding: 4rem 10px;
+    }
+    .footer-centered {
+        text-align: center;
+    }
+    .footer-left-nav-section {
+        display: block;
+        padding-bottom: 4rem;
+        width: 100%;
+    }
+    .footer-left-nav-image {
+        margin: 0 0 4rem;
+    }
+    .footer-left__nav-items {
+        margin-bottom: 0;
+    }
+    .nav__link {
+        padding: 0.5rem 0
+    }
+    .footer-right-contact-section {
+        display: block;
+        width: 100%;
+    }
+    .footer-right-contact {
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+    .right-contact__contact-us {
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+    }
+    .footer-social-media {
+        justify-content: center;
+    }
 }

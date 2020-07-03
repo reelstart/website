@@ -83,6 +83,9 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
+				<div className="footer-bottom-legal">
+					<p>Reel Start is operating through a fiscal sponsorship with Players  Philanthropy Fund (Federal Tax ID: 27-6601178), a Maryland charitable trust with federal tax-exempt status as a public charity under Section 501(c)(3) of the Internal Revenue Code. Contributions to Reel Start are tax-deductible to the fullest extent of the law.</p>
+				</div>
 			</div>
 		</div>
 	);

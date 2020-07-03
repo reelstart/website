@@ -14,6 +14,7 @@ class StudentProjectCard extends Component {
 	modalClose = () => {
 		this.setState({ modalShow: false });
 	};
+	
 	render() {
 		const { image, title, location, description, link, videoLink } = this.props.project;
 

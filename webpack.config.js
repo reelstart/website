@@ -91,17 +91,17 @@ module.exports = {
 							importLoaders: 1,
 						},
 					},
-					{
-						loader: 'postcss-loader',
-						options: {
-							ident: 'postcss',
-							plugins: [
-								require('autoprefixer')({
-									browsers: ['> 1%', 'last 2 versions'],
-								}),
-							],
-						},
-					},
+					// {
+					// 	loader: 'postcss-loader',
+					// 	options: {
+					// 		ident: 'postcss',
+					// 		plugins: [
+					// 			require('autoprefixer')({
+					// 				browsers: ['> 1%', 'last 2 versions'],
+					// 			}),
+					// 		],
+					// 	},
+					// },
 					{
 						loader: 'resolve-url-loader',
 					},

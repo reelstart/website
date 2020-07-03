@@ -10,7 +10,6 @@ import StudentProjects from '../../components/StudentProjectsSection/StudentProj
 import ImageGrid from '../../components/ImageGrid/ImageGrid';
 import More from '../../components/more@/More';
 import MainSponsors from '../../components/mainSponsors/MainSponsors';
-import SecondaryLogos from '../../components/secondaryLogos/SecondaryLogos';
 import SecondDonation from '../../components/secondDonationSection/SecondDonation';
 import Footer from '../../components/Footer/Footer';
 
@@ -79,10 +78,9 @@ class App extends Component {
 				/>
 				<TestimonialSection getRef={this.testimonialRef} />
 				<Founders getRef={this.FoundersRef} />
-				<ImageGrid />
+				{/* <ImageGrid /> */}
 				<More />
 				<MainSponsors />
-				<SecondaryLogos />
 				<SecondDonation />
 				<Footer />
 			</div>
@@ -97,10 +95,10 @@ class App extends Component {
 				{/* <MobileTestimonial /> */}
 				<TestimonialCarousel />
 				<Founders />
-				<ImageGrid />
+				{/* <ImageGrid /> */}
 				<More />
 				<MainSponsors />
-				<SecondaryLogos />
+				<Footer />
 			</div>
 		);
 

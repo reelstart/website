@@ -77,7 +77,7 @@ export const PROJECTS = [
 		id: 4,
 		image: robotBullies,
 		title: 'Robot Bullies',
-		location: '(Toronto 2018)',
+		location: '(Toronto 2017)',
 		description: 'Nelly travels through time itself to learn about the importance of standing up to bullies.',
 		writtenBy: [
 			'Dominiq Essue-Smith',
@@ -100,6 +100,6 @@ export const PROJECTS = [
 		description: 'A behind the scenes look at the Reel Start program.',
 		writtenBy: [],
 		link: '',
-		videoLink: 'https://www.youtube.com/embed/Y54QMKaSzJs?autoplay=1',
+		videoLink: 'https://www.youtube.com/embed/9Lv4g3t2vUM?autoplay=1',
 	},
 ];

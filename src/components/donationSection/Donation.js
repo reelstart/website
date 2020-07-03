@@ -16,7 +16,7 @@ const Donation = props => {
 				</p>
 			</div>
 			<div className="donation-center-image">
-				<img src={donationCurve} alt="A red curved line linking saying to donation button" />
+				<img src={donationCurve} alt="A red curved line linking to donation button" />
 			</div>
 			<div className="donation-right-button">
 				<p>donation button component here</p>

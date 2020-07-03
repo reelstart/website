@@ -79,6 +79,12 @@
 	}
 }
 
+@media all and (max-height: 750px) {
+	.about-section {
+		min-height: 800px;
+	}
+}
+
 @media all and (min-width: $tablet) and (max-width: $small-desktop) {
 	.about-section {
 		max-height: 800px;
